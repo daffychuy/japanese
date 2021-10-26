@@ -184,7 +184,7 @@ func IdentifyPositivity(verb string) (positivity int) {
 	return Positive
 }
 
-// // IdentifyGroup tries to identify the verb class
+// IdentifyGroup tries to identify the verb class
 // func IdentifyGroup(verb string) (class int) {
 // 	// TODO
 // 	return class
