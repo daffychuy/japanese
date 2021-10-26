@@ -17,11 +17,6 @@ jobs:
       with:
         go-version: 1.17
         
-    - name: Test identify functions
-      run: go test identify.go identify_test.go
+    - name: Test identify, transform and words functions
+      run: go test transform.go transform_test.go identify.go identify_test.go words_test.go words.go
       
-    - name: Test transform functions
-      run: go test transform.go transform_test.go
-      
-    - name: Test words functions
-      run: go test words.go words_test.go
