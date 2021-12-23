@@ -1,6 +1,8 @@
 package japanese
 
-import "strings"
+import (
+	"strings"
+)
 
 // possible verb forms
 const (
@@ -185,7 +187,7 @@ func IdentifyPositivity(verb string) (positivity int) {
 }
 
 // IdentifyGroup tries to identify the verb class
-// func IdentifyGroup(verb string) (class int) {
-// 	// TODO
-// 	return class
-// }
+func IdentifyGroup(verb string) (class string) {
+	root, _ := SplitEnding(verb)
+	return root
+}

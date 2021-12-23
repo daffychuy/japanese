@@ -65,3 +65,21 @@ func DictionaryForm(verb string) (godan string, ichidan string) {
 
 	return godan, ichidan
 }
+
+// Convert any verb form to masu form
+func MasuForm(verb string) (masu string) {
+	root, ending := SplitEnding(verb)
+	switch ending {
+	case Ru, U:
+		masu = verb
+	case Nai:
+		masu = verb
+	default:
+		if len(root) == 0 {
+			masu = "します"
+		} else {
+			masu = verbify(root) + "ます"
+		}
+	}
+	return masu
+}

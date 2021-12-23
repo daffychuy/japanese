@@ -77,3 +77,19 @@ func TestIdentifyPositivity(t *testing.T) {
 		}
 	}
 }
+
+func TestVerbGroup(t *testing.T) {
+	tests := []struct {
+		in   string
+		want string
+	}{
+		{"ある", "Godan"},
+		{"あります", "Godan"},
+	}
+
+	for _, tt := range tests {
+		if got := IdentifyGroup(tt.in); got != tt.want {
+			t.Errorf("IdentifyGroup(%q) = %q, want %q", tt.in, got, tt.want)
+		}
+	}
+}

@@ -57,6 +57,8 @@ func TestDictionaryFormBasicGodans(t *testing.T) {
 		{"ぬぎます", "ぬぐ"},
 		{"うたいます", "うたう"},
 		{"歌います", "歌う"},
+		// {"きます", "くる"},
+		// {"来ます", "来る"},
 		// TODO: fix
 		// {"歌ってた", "歌たう"},
 	}
@@ -68,6 +70,31 @@ func TestDictionaryFormBasicGodans(t *testing.T) {
 		}
 	}
 }
+
+// func TestMasuFormBasicGodans(t *testing.T) {
+// 	tests := []struct {
+// 		in   string
+// 		want string
+// 	}{
+// 		{"", ""},
+// 		{"いく", "いきます"},
+// 		{"ききます", "ききます"},
+// 		{"ぬぎます", "ぬぎます"},
+// 		{"うたいます", "うたいます"},
+// 		{"歌います", "歌います"},
+// 		// {"きます", "くる"},
+// 		// {"来ます", "来る"},
+// 		// TODO: fix
+// 		// {"歌ってた", "歌たう"},
+// 	}
+
+// 	for _, tt := range tests {
+// 		got := MasuForm(tt.in)
+// 		if got != tt.want {
+// 			t.Errorf("masuForm(%q) = %q, want %q", tt.in, got, tt.want)
+// 		}
+// 	}
+// }
 
 func TestDictionaryFormAru(t *testing.T) {
 	verbs := []string{"ある", "あります", "ない", "ありません"}
