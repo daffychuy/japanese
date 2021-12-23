@@ -1,5 +1,10 @@
-[![Build Status](https://travis-ci.org/gojp/japanese.svg?branch=master)](https://travis-ci.org/gojp/japanese) [![Go Report Card](https://goreportcard.com/badge/github.com/gojp/japanese)](https://goreportcard.com/report/github.com/gojp/japanese) [![GoDoc](https://godoc.org/github.com/gojp/japanese?status.svg)](https://godoc.org/github.com/gojp/japanese)
+<!-- [![Build Status](https://travis-ci.org/gojp/japanese.svg?branch=master)](https://travis-ci.org/gojp/japanese)  -->
+![Github CI/CD](https://github.com/daffychuy/japanese/actions/workflows/go.yml/badge.svg) [![Go Report Card](https://goreportcard.com/badge/github.com/daffychuy/japanese)](https://goreportcard.com/report/github.com/daffychuy/japanese) [![GoDoc](https://godoc.org/github.com/daffychuy/japanese?status.svg)](https://pkg.go.dev/github.com/daffychuy/japanese)
 ## Note: This is a fork of https://github.com/gojp/japanese, including fixes
+To use this package
+```
+go get github.com/daffychuy/japanese
+```
 
 # Japanese
 
